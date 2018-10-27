@@ -1,0 +1,179 @@
+@fontColor: #ffffff;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+html,
+body {
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: @fontColor;
+    opacity: 0.8;
+    filter: alpha(opacity=70);
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: @fontColor;
+    opacity: 0.8;
+    filter: alpha(opacity=70);
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: @fontColor;
+    opacity: 0.8;
+    filter: alpha(opacity=70);
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: @fontColor;
+    opacity: 0.8;
+    filter: alpha(opacity=70);
+}
+
+#head {
+    & .container_head {
+        z-index: 9;
+        width: 100%;
+        position: fixed;
+        background: #32c27d;
+        text-align: center;
+        line-height: 35px;
+        font-size: 1.1rem;
+        color: #ffffff;
+        p:first-child {
+            margin-top: -35px;
+        }
+        p:nth-child(2) {
+            outline: none;
+            border: 0;
+            margin: 10px auto;
+            margin-top: 10px;
+            text-align: center;
+            border-radius: 3px;
+            height: 30px;
+            font-size: 1rem;
+            line-height: 30px;
+            width: 95%;
+            background: #2eaf72;
+            input {
+                // text-align: center;
+                left: 10px;
+                height: 30px;
+                width: 80%;
+                font-size: 1rem;
+                padding: 0 5px;
+                outline: none;
+                border: 0;
+                color: #ffffff;
+                background: transparent;
+            }
+            & span:nth-child(3) {
+                position: absolute;
+                left: 50%;
+                margin: 0 0 0 -7px;
+            }
+            & span:nth-child(2) {
+                position: absolute;
+                left: 50%;
+                margin: 7px 0 0 -30px;
+            }
+            &>i {
+                position: absolute;
+            }
+            &>i:nth-child(4) {
+                left: -15px;
+                font-size: 2rem;
+            }
+            &>i:nth-child(5) {
+                right: -15px;
+                margin-top: 6px;
+                font-size: 1.3rem;
+            }
+        }
+        p:nth-child(3) {
+            margin: 0 auto;
+            padding: 5px 0;
+            width: 80%;
+            &>input {
+                outline: none;
+                height: 20px;
+                width: 100%;
+                border: 0;
+                font-size: 1rem;
+                color: #ffffff;
+                background: #32c27d;
+            }
+        }
+    }
+}
+.aplayer-pic {
+    border-radius: 50%;
+    height: 45px !important;
+    width: 45px !important;
+    margin: 23px 0 10px 10px;
+    background-color: #FFFFFF !important;
+    cursor: initial !important;
+    .aplayer-button {
+        position: fixed !important;
+        top: 5px !important;
+        background: #ffffff !important;
+    }
+    .aplayer-play {
+        width: 26px !important;
+        height: 26px !important;
+        right: 25px !important;
+    }
+    .aplayer-pause {
+        width: 26px !important;
+        height: 26px !important;
+        right: 25px !important;
+        .aplayer-icon-pause {
+            top: 3px !important;
+            left: 3px !important;
+            height: 19px !important;
+            width: 19px !important;
+        }
+    }
+}
+
+//如果soundplay组件存在则空出位置
+.con_b {
+    margin-bottom: 111px !important;
+} //播放器控件 CSS调节
+.aplayer-music {
+    height: 21px;
+    width: 83.5%;
+    span:nth-child(2) {
+        // display: block;
+        color: #999999 !important;
+    }
+}
+
+.aplayer-body {
+    height: 90px;
+}
+
+.aplayer-lrc {
+    height: 29.13em;
+    margin-top: 5px;
+    margin-left: -73px;
+}
+
+.aplayer .aplayer-body .aplayer-info {
+    height: 90px !important;
+    padding: 10px 7px 0 7px !important;
+}
