@@ -72,7 +72,7 @@ export default {
       _this
         .http("get", "/plist/list/" + specialid + "?json=true", "")
         .then(function(res) {
-          console.log(res);
+          // console.log(res);
           console.log(res.data.info.list.imgurl);
           _this.backImgUrl =
             res.data.info.list.imgurl.split("{")[0] +
