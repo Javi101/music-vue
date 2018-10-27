@@ -3,6 +3,6 @@
 ```
 vue ui
 ```
-![image](https://github.com/Javi101/music-vue/blob/dev/preview1.jpg)
+![image](https://github.com/Javi101/music-vue/blob/master/preview1.jpg)
 
-![image](https://github.com/Javi101/music-vue/blob/dev/preview2.jpg)
+![image](https://github.com/Javi101/music-vue/blob/master/preview2.jpg)
