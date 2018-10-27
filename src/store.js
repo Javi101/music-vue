@@ -46,8 +46,6 @@ export default new Vuex.Store({
 
   },
   actions: {
-    Cache() {
-      // console.log(sessionStorage.getItem("aaa"))
-    }
+
   }
 });

@@ -49,12 +49,11 @@ export default {
         .then(function(res) {
           _this.dataList = res.data.info;
           _this.$indicator.close();
-          // console.log(_this.dataList);
+          console.log(_this.dataList);
         });
     },
     //拿到用户点击的歌曲详情
     soundPlayFn(val) {
-      console.log(this.dataList);
       this.$store.commit("updataSoundPlay", {
         soundplay: true,
         soundDetails: this.dataList[val]
