@@ -2,13 +2,13 @@
     <div id="head">
         <div class="container_head">
           <p  :class="{head_top_move1:headTopMove,head_top_move2:!headTopMove}">
-            <span class="fa fa-bars container_head_icon_left"></span>
+            <span class="icon iconfont icon-caidan container_head_icon_left"></span>
             <span>音乐馆</span>
-            <span class="fa fa-user-circle container_head_icon_right"></span>
+            <span class="icon iconfont icon-add container_head_icon_right"></span>
           </p>
           <p :class="{'bgcolor':isTrue}">
             <input @click="searchFn" v-model="searchValue" @input="searchlistFn"  type="text" :placeholder="plaText">
-            <span v-show="!headTopMove" class="fa fa-search fa-1x"></span>
+            <span v-show="!headTopMove" class="icon iconfont icon-sousuo"></span>
             <span v-show="!headTopMove">搜索</span>
             <i @click="homeBackFn(0)" v-show="headTopMove" class="fa fa-angle-left" :class="{head_top_back1:headTopMove}"></i>
             <i @click="homeBackFn(1)" v-show="headTopMove" class="fa fa-microphone" :class="{head_top_back2:headTopMove}"></i>
@@ -102,11 +102,13 @@ export default {
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 .container_head_icon_left {
   float: left;
-  padding: 12px 0 0 10px;
+  font-size: 1.2rem;
+  padding: 5px 0 0 10px;
 }
 .container_head_icon_right {
   float: right;
-  padding: 12px 10px 0 0;
+  font-size: 1.2rem;
+  padding: 5px 10px 0 0;
 }
 .head_top_move1 {
   animation: headanimate1 0.5s;

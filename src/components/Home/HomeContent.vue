@@ -15,23 +15,23 @@
                     <section>
                         <div class="Content-nav">
                             <p>
-                                <span class="fa fa-user"></span>
+                                <span class="icon iconfont icon-renxiang"></span>
                                 <span>歌手</span>
                             </p>
                             <p>
-                                <span class="fa fa-user"></span>
+                                <span class="icon iconfont icon-paihangbang"></span>
                                 <span>排行</span>
                             </p>
                             <p>
-                                <span class="fa fa-user"></span>
+                                <span class="icon iconfont icon-kinds"></span>
                                 <span>分类歌单</span>
                             </p>
                             <p>
-                                <span class="fa fa-user"></span>
+                                <span class="icon iconfont icon-jingminglaba"></span>
                                 <span>电台</span>
                             </p>
                             <p>
-                                <span class="fa fa-user"></span>
+                                <span class="icon iconfont icon-shipin-tianchong"></span>
                                 <span>视频</span>
                             </p>
                         </div>
@@ -137,7 +137,7 @@ export default {
         _this.datalist.list1Specialid = [];
         _this.datalist.list2Specialid = [];
         _this.datalist.list3Specialid = [];
-        console.log(res)
+        console.log(res);
         _this.reloadlistTotal = res.data.plist.list.info.length;
         console.log(res.data.plist.list.info);
         res.data.plist.list.info.map((val, index) => {
@@ -241,14 +241,17 @@ export default {
           display: -moz-box;
           display: block;
           &:first-child {
-            font-size: 1.5rem;
             color: #2fc579;
             padding-bottom: 3px;
+            font-size: 1.3rem;
           }
+
           &:nth-child(2) {
-            font-size: 0.85rem;
+            font-size: 0.85rem !important;
           }
         }
+
+
       }
     }
     .Content-list {
@@ -347,7 +350,7 @@ export default {
 
 @keyframes headtopback {
   from {
-    padding-top: 50px;
+    padding-top: 55px;
   }
   to {
     padding-top: 85px;
@@ -356,7 +359,7 @@ export default {
 
 @-webkit-keyframes headtopback /* Safari and Chrome */ {
   from {
-    padding-top: 50px;
+    padding-top: 55px;
   }
   to {
     padding-top: 85px;

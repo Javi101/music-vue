@@ -9,6 +9,8 @@ import Mint from "mint-ui";
 import "mint-ui/lib/style.min.css";
 import Aplayer from 'vue-aplayer'
 
+
+
 Vue.use(Mint);
 Vue.config.productionTip = false;
 // 加载音乐控件
