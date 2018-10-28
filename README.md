@@ -1,4 +1,8 @@
 # music-vue
+####安装vue-cli 3.0
+```
+npm install -g @vue/cli
+```
 #### 进入vue-cli3.0的UI界面运行
 ```
 vue ui
