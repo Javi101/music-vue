@@ -1,5 +1,5 @@
 # music-vue
-####安装vue-cli 3.0
+#### 安装vue-cli 3.0
 ```
 npm install -g @vue/cli
 ```
