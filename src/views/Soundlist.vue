@@ -18,7 +18,7 @@
              </div>
              <div class="soundlistContentList">
                <ul>
-                 <li @click="soundPlayFn(index)" v-for="(item,index) in soundLists" :key="item.album_id">
+                 <li @click="soundPlayFn(index)" v-for="(item,index) in soundLists" :key="item.audio_id">
                    <span>{{index + 1}}</span>{{item.filename}}
                   </li>
                </ul>
