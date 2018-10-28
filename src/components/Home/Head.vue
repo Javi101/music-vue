@@ -26,6 +26,7 @@ export default {
       let _this = this;
       if (to.path == "/home") {
         _this.publicHeadFn(false);
+        _this.searchValue = "";
       }
     }
   },
@@ -35,15 +36,20 @@ export default {
       searchValue: ""
     };
   },
+
   computed: {
     isTrue: function() {
       return this.$store.state.headTopMove;
     },
-    headTopMove: function() {
+
+    headTopMove: {
       //头部搜索是否变换
-      console.log(this.$store.state.headTopMove)
-      return this.$store.state.headTopMove;
+      get: function() {
+        return this.$store.state.headTopMove;
+      },
+      set: function() {}
     },
+
     plaText: function() {
       return this.$store.state.plaText;
     }
@@ -90,7 +96,6 @@ export default {
     // 获取用户输入信息 发送给Searchlist页面
     searchlistFn() {
       console.log(this.searchValue);
-
       this.$store.commit("updataUserInputValue", {
         userVal: this.searchValue
       });
